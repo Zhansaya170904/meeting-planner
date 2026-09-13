@@ -1,0 +1,201 @@
+/* Общие стили */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Ссылки */
+a {
+    color: #5c6bc0;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Контейнер */
+.container {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1100px;
+    padding-top: 30px;
+}
+
+/* Заголовки */
+h1, h2, h3 {
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+h1 {
+    font-size: 32px;
+}
+
+h2 {
+    font-size: 26px;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+/* Страница задачи */
+.task-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    max-width: 800px;
+    width: 100%;
+}
+
+.task-header {
+    font-size: 24px;
+    color: #5c6bc0;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.task-details {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.task-description {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.task-due-date {
+    font-size: 14px;
+    color: #777;
+}
+
+/* Стиль для формы задачи */
+.task-form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    margin-top: 20px;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+label {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 5px;
+}
+
+input, textarea, select {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+input:focus, textarea:focus, select:focus {
+    border-color: #5c6bc0;
+}
+
+/* Кнопки */
+.btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #5c6bc0;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-align: center;
+}
+
+.btn:hover {
+    background-color: #3f4e9e;
+}
+
+.delete-btn {
+    background-color: #e74c3c;
+}
+
+.delete-btn:hover {
+    background-color: #c0392b;
+}
+
+/* Сообщения */
+.error, .success {
+    font-size: 14px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.error {
+    color: #e74c3c;
+}
+
+.success {
+    color: #2ecc71;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    .task-container {
+        padding: 20px;
+    }
+
+    .task-header {
+        font-size: 22px;
+    }
+
+    .task-form {
+        padding: 15px;
+    }
+
+    .btn {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .task-header {
+        font-size: 18px;
+    }
+
+    .task-form {
+        padding: 10px;
+    }
+
+    .btn {
+        font-size: 14px;
+    }
+}
